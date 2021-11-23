@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+<!--    
+    <table class = "calculator" >
+        <tr>
+        <td colspan = "3"> <input class = "display-box" type = "text" id = "result" disabled /> </td>
+        
+        <td> <input class = "button" type = "button" value = "C" onclick = "clearScreen()" style = "background-color: #fb0066;" /> </td>
+        </tr>
+        <tr>
+ 
+        <td> <input class = "button" type = "button" value = "1" onclick = "display('1')" /> </td>
+        <td> <input class = "button" type = "button" value = "2" onclick = "display('2')" /> </td>
+        <td> <input class = "button" type = "button" value = "3" onclick = "display('3')" /> </td>
+        <td> <input class = "button" type = "button" value = "/" onclick = "display('/')" /> </td>
+        </tr>
+        <tr>
+        <td> <input class = "button" type = "button" value = "4" onclick = "display('4')" /> </td>
+        <td> <input class = "button" type = "button" value = "5" onclick = "display('5')" /> </td>
+        <td> <input class = "button" type = "button" value = "6" onclick = "display('6')" /> </td>
+        <td> <input class = "button" type = "button" value = "-" onclick = "display('-')" /> </td>
+        </tr>
+        <tr>
+        <td> <input class = "button" type = "button" value = "7" onclick = "display('7')" /> </td>
+        <td> <input class = "button" type = "button" value = "8" onclick = "display('8')" /> </td>
+        <td> <input class = "button" type = "button" value = "9" onclick = "display('9')" /> </td>
+        <td> <input class = "button" type = "button" value = "+" onclick = "display('+')" /> </td>
+        </tr>
+        <tr>
+        <td> <input class = "button" type = "button" value = "." onclick = "display('.')" /> </td>
+        <td> <input class = "button" type = "button" value = "0" onclick = "display('0')" /> </td>
+      
+        <td> <input class = "button" type = "button" value = "=" onclick = "calculate()" style = "background-color: #fb0066;" /> </td>
+        <td> <input class = "button" type = "button" value = "*" onclick = "display('*')" /> </td>
+        </tr>
+        </table>
+        <script type="text/javascript" src="script.js"></script>
+    -->
+<div class='di'>
+    <table class="calculatr">
+        <tr>
+            <td colspan='4'><input type="text" class="dis-box" id='result' ></td>
+        </tr>
+        <tr>    
+            <td ><input class="button" type="button" value="1" onclick='disp(1)'></td>
+            <td><input class="button" type="button" value="2" onclick='disp(2)'></td>
+            <td><input class="button" type="button" value="3" onclick='disp(3)'></td>
+            <td ><input style="background-color:#F2FFA0;text-align:center;font-size:18px;" class='button' type="button" value="+" onclick='disp("+")'></td>
+        </tr>
+        <tr>
+            <td><input class="button" type="button" value="4" onclick='disp(4)'></td>
+            <td><input class="button" type="button" value="5" onclick='disp(5)'></td>
+            <td><input class="button" type="button" value="6" onclick='disp(6)'></td>
+            <td ><input style="background-color:#F2FFA0;text-align:center;font-size:18px;" class="button" type="button" value="-" onclick='disp("-")'></td>
+        </tr>
+        <tr>
+            <td><input class="button" type="button" value="7" onclick='disp(7)'></td>
+            <td><input class="button" type="button" value="8" onclick='disp(8)'></td>
+            <td><input class="button" type="button" value="9" onclick='disp(9)'></td>
+            <td ><input style="background-color:#F2FFA0;text-align:center;font-size:18px;" class="button" type="button" value="*" onclick='disp("*")'></td>
+        </tr>
+        <tr>
+            <td ><input style="background-color:#F0A3AA;text-align:center;" class="button" type="button" value="c" onclick='cle_scr()'></td>
+            <td><input class="button" type="button" value="0" onclick='disp(0)'></td>
+            <td><input class="button" type="button" value="=" onclick='calculate()' ></td>
+            <td ><input style="background-color:#F2FFA0;text-align:center;font-size:18px;" class="button" type="button" value="/" onclick='disp("/")'></td>
+        </tr>
+    </table>
+</div>
+<script type="text/javascript" src="scrip.js"></script>
+</body>
+</html>
