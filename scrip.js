@@ -1,25 +1,33 @@
-flag=0
-f=0
-function cle_scr(){
+let flag=0
+let flag_1=0
+
+function clearScreen(){
     document.getElementById('result').value = " ";
 }
 
-function disp(val){
+function displayOnScreen(val){
     if (flag===1){
-        cle_scr();
+        clearScreen();
         flag=0
 }
     document.getElementById('result').value += val
 }
 
 function calculate(){
-
     try{
-        console.log(typeof(document.getElementById('result').value))
-        console.log(document.getElementById('result').value)
-        q=eval(document.getElementById('result').value)
-        document.getElementById('result').value=q
+        answer=eval(document.getElementById('result').value)
+       
+        if (answer===undefined &&  typeof(document.getElementById('result').value)!='number'){
+            //
+        }
+        else if(answer===undefined){
+            document.getElementById('result').value='Syntax Error'   
+            flag=1
+        }
+        else{
+        document.getElementById('result').value=answer
         flag=1
+        }
         
     }
     catch(err) {
@@ -27,18 +35,18 @@ function calculate(){
         flag=1
       }
 }
+
 document.getElementById('result').addEventListener("keypress",function(e){
-    if (f==1){
+    if (flag_1==1){
         if (e.key!=='Enter'){
-        cle_scr()
-        f=0
+        clearScreen()
+        flag_1=0
     }
         
 }
     if (e.key === 'Enter'){
-        
         calculate()
-        f=1
+        flag_1=1
 }})
 
 
